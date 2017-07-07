@@ -13,6 +13,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.props.activePageLoad);
     switch (this.props.activePage){
       case 'LoadPage':
         return <ContainerLoadPage />
@@ -20,7 +21,10 @@ class App extends Component {
         return <ContainerHome />
       default:
         return(
-          <h1>page failed to become active</h1>
+          <div>
+            <h1>page failed to become active</h1>
+          </div>
+
         );
     }
 

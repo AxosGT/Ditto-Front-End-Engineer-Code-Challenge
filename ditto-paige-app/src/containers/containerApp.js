@@ -4,14 +4,16 @@ import App from '../components/App'
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    activePageLoad: state.pageLoad,
     activePage: state.pageView
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onPageLode: ()=>{
-      dispatch(pageLoad());
+    onPageLode: (myData)=>{
+      dispatch(pageLoad(myData));
+      dispatch(pageLoad(myData));
     }
   }
 }
