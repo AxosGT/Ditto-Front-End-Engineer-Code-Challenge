@@ -1,17 +1,18 @@
 import { connect } from 'react-redux'
-import { pageLoad } from '../actions/index'
-import App from '../components/App'
+import { pageView } from '../actions/index'
+import LoadPage from '../components/LoadPage'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    activePage: state.pageView
+    activeVote: state.userInfo.myVote,
+    activeAddress: state.nodeAddress
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onPageLode: ()=>{
-      dispatch(pageLoad());
+    onChangePage: (pageName)=>{
+      dispatch(pageView(pageName))
     }
   }
 }
@@ -19,4 +20,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(App)
+)(LoadPage)
