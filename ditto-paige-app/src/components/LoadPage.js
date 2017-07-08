@@ -15,7 +15,7 @@ class LoadPage extends Component {
                 onClick={(e)=>
                   {e.preventDefault();
                   // this.props.onChoseNum(n,this.props.activeAddress);
-                  this.props.onChangePage('home')}
+                  this.props.onChangePage('detailsPage')}
                 }
                 buttonImg={'/eyewear-selector' +  n.images.frontal}
                 buttonBrand={ n.brand}

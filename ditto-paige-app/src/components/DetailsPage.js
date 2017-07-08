@@ -3,13 +3,13 @@ import Button from './button'
 //import '../myCSS/home.css'
 
 
-class Home extends Component {
+class DetailsPage extends Component {
 
     render() {
       var arryFeb = [1,2,3,5,8,13,0];
 
       return (
-        <div className='home'>
+        <div className='detailsPage'>
           <h1>{this.props.activeUser}</h1>
           <Button
             onClick={(e)=>{e.preventDefault(); this.props.onChangeUser()}}
@@ -32,4 +32,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default DetailsPage;

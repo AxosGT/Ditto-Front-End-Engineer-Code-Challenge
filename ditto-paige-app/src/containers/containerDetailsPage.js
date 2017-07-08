@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 //import { fbVote ,changeUser ,pageView } from '../actions/index'
-import Home from '../components/Home'
+import DetailsPage from '../components/DetailsPage'
 
 const mapStateToProps = (state, ownProps) => {
   //console.log(state.nodeAddress);
@@ -33,4 +33,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home)
+)(DetailsPage)

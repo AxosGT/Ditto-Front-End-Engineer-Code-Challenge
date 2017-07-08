@@ -1,5 +1,5 @@
 import ContainerLoadPage from '../containers/containerLoadPage';
-import ContainerHome from '../containers/containerHome';
+import ContainerDetailsPage from '../containers/containerDetailsPage';
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 //import './App.css';
@@ -15,8 +15,8 @@ class App extends Component {
     switch (this.props.activePage){
       case 'loadPage':
         return <ContainerLoadPage />
-      case 'home':
-        return <ContainerHome />
+      case 'detailsPage':
+        return <ContainerDetailsPage />
       default:
         return(
           <div>
