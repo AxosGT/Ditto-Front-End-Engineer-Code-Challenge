@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { pageView } from '../actions/index'
 import { setAppJSON } from '../actions/index'
-import LoadPage from '../components/LoadPage'
+import Selector from '../components/Selector'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(LoadPage)
+)(Selector)

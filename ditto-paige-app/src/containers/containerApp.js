@@ -13,9 +13,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onPageLode: (myPageView)=>{
-      dispatch(loadAppJSON()),
-      dispatch(pageView(myPageView));
+    onPageLode: ()=>{
+      dispatch(loadAppJSON())
     }
   }
 }

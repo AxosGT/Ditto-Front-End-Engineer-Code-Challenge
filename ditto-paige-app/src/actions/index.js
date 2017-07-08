@@ -8,8 +8,8 @@ export function setAppJSON(setData){
   return {type: SET_APP_JSON, setData}
 }
 
-export function pageView(pageV){
-  return {type: PAGE_VIEW, pageV}
+export function pageView(pageID){
+  return {type: PAGE_VIEW, pageID}
 }
 
 export function loadAppJSON() {

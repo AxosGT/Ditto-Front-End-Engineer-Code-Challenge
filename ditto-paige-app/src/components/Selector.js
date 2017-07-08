@@ -3,19 +3,19 @@ import Button from './button'
 //import '../myCss/rePage.css'
 
 
-class LoadPage extends Component {
+class Selector extends Component {
 
     render() {
       return (
         <div>
-          <h1>DITTO</h1>
+
           <h1>Select Your Eyewear</h1>
           {this.props.activePageLoad.map((n)=>
               <Button
                 onClick={(e)=>
                   {e.preventDefault();
                   // this.props.onChoseNum(n,this.props.activeAddress);
-                  this.props.onChangePage('detailsPage')}
+                  this.props.onChangePage(n+1)}
                 }
                 buttonImg={'/eyewear-selector' +  n.images.frontal}
                 buttonBrand={ n.brand}
@@ -28,4 +28,4 @@ class LoadPage extends Component {
     }
 }
 
-export default LoadPage;
+export default Selector;
