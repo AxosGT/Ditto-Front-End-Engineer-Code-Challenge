@@ -1,10 +1,11 @@
 import { connect } from 'react-redux'
 import { pageView } from '../actions/index'
+import { setAppJSON } from '../actions/index'
 import LoadPage from '../components/LoadPage'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    activePageLoad: state.pageLoad,
+    activePageLoad: state.setAppJSON,
     activePage: state.pageView
   }
 }

@@ -8,7 +8,7 @@ class LoadPage extends Component {
     render() {
       return (
         <div>
-          {/* {this.props.activePageLoad.map((n)=>
+          {this.props.activePageLoad.map((n)=>
               <Button
                 onClick={(e)=>
                   {e.preventDefault();
@@ -18,18 +18,8 @@ class LoadPage extends Component {
                 buttonDis={'/eyewear-selector'+ n.images.frontal}
                 key={n.id}
               />
-          )} */}
+          )}
         </div>
-
-
-
-        // <div className='rePage'>
-        //   <h1>Vote! {this.props.activeVote}</h1>
-        //   <Button
-        //     onClick={(e)=>{e.preventDefault(); this.props.onChangePage('home')}}
-        //     buttonDis={'Reset vote'}
-        //   />
-        // </div>
       );
     }
 }
