@@ -9,7 +9,9 @@ class Button extends Component {
       return (
           <button type="button" className='button'
             onClick = {this.props.onClick} >
-            <img src = {this.props.buttonDis} alt ='dog' />
+            <img src = {this.props.buttonImg} />
+            <h1>{this.props.buttonBrand}</h1>
+            <h1>{this.props.buttonName}</h1>
           </button>
       );
     }

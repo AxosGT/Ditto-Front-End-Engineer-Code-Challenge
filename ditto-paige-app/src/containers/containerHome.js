@@ -5,8 +5,8 @@ import Home from '../components/Home'
 const mapStateToProps = (state, ownProps) => {
   //console.log(state.nodeAddress);
   return {
-    activeUser: state.userInfo.email,
-    activeAddress: state.nodeAddress
+    //activeUser: state.userInfo.email,
+    //activeAddress: state.nodeAddress
   }
 }
 
