@@ -22,10 +22,7 @@ class DetailsPage extends Component {
           <h1>
             {currentDetails.price}
           </h1>
-
-        <form>
           <div>
-
             {currentDetails.sizes.map((n,i)=>
               <div
                 key={n}
@@ -35,14 +32,11 @@ class DetailsPage extends Component {
                   type="radio"
                   value={n}
                   checked={this.props.activeSize === n }
-
-                 />
+                />
                 {n}
               </div>
             )}
           </div>
-        </form>
-
           <span dangerouslySetInnerHTML={{__html: currentDetails.description}} />
         </div>
       );
