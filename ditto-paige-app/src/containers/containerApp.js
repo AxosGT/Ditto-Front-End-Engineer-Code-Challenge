@@ -1,19 +1,21 @@
 import { connect } from 'react-redux'
-import { pageLoad } from '../actions/index'
+import { setAppJSON } from '../actions/index'
+import { loadAppJSON } from '../actions/index'
+import { pageView } from '../actions/index'
 import App from '../components/App'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    activePageLoad: state.pageLoad,
+    activePageLoad: state.setAppJSON,
     activePage: state.pageView
   }
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onPageLode: (myData)=>{
-      dispatch(pageLoad(myData));
-      dispatch(pageLoad(myData));
+    onPageLode: (myPageView)=>{
+      dispatch(loadAppJSON()),
+      dispatch(pageView(myPageView));
     }
   }
 }

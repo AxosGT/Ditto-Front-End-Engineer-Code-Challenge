@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux'
-import pageLoad from './pageLoad'
-//import pageView from './pageView'
-//import nodeAddress from './nodeAddress'
+import setAppJSON from './setAppJSON'
+import pageView from './pageView'
 
 const setMyApp = combineReducers({
-  pageLoad
-//  pageView,
-//  nodeAddress
+  setAppJSON,
+  pageView
 })
 
 export default setMyApp

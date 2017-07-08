@@ -4,8 +4,8 @@ import LoadPage from '../components/LoadPage'
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    activeVote: state.userInfo.myVote,
-    activeAddress: state.nodeAddress
+    activePageLoad: state.pageLoad,
+    activePage: state.pageView
   }
 }
 
