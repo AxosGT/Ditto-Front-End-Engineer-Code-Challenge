@@ -6,27 +6,14 @@ import Button from './button'
 class DetailsPage extends Component {
 
     render() {
-      var arryFeb = [1,2,3,5,8,13,0];
-
+      var currentDetails = this.props.activePageLoad[this.props.activePage-1];
       return (
         <div className='detailsPage'>
-          <h1>{this.props.activeUser}</h1>
-          <Button
-            onClick={(e)=>{e.preventDefault(); this.props.onChangeUser()}}
-            buttonDis={'Change User'}
-          />
-          <h1>Vote!</h1>
-            {arryFeb.map((n)=>
-              <Button
-                onClick={(e)=>
-                  {e.preventDefault();
-                  this.props.onChoseNum(n,this.props.activeAddress);
-                  this.props.onChangePage('rePage')}
-                }
-                buttonDis={(n===0)?'Abstain':n}
-                key={n.toString()}
-              />
-            )}
+          <h1>
+            {this.props.activePage}
+            <img src = {'/eyewear-selector' +currentDetails.images.frontal } />
+            <img src = {'/eyewear-selector' +currentDetails.images.side } />
+          </h1>
         </div>
       );
     }

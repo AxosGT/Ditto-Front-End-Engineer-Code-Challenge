@@ -12,6 +12,7 @@ class App extends Component {
 
   render() {
     console.log(this.props.activePageLoad);
+    console.log(this.props.activePage);
     return(
       <div>
         <h1>DITTO</h1>
@@ -20,22 +21,6 @@ class App extends Component {
       </div>
 
     );
-
-
-    // switch (this.props.activePage){
-    //   case 'Selector':
-    //     return <ContainerSelector />
-    //   case 'detailsPage':
-    //     return <ContainerDetailsPage />
-    //   default:
-    //     return(
-    //       <div>
-    //         <h1>page failed to become active</h1>
-    //       </div>
-    //
-    //     );
-    // }
-
   }
 }
 

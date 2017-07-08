@@ -12,8 +12,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onChangePage: (pageName)=>{
-      dispatch(pageView(pageName))
+    onChangePage: (pageID)=>{
+      dispatch(pageView(pageID))
     }
   }
 }
