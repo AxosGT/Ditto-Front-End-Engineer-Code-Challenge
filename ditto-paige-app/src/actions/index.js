@@ -1,8 +1,11 @@
 
-export const USERINFO ='USERINFO'
-export const NODEADDRESS = 'NODEADDRESS'
+export const SET_SIZE = 'SET_SIZE'
 export const PAGE_VIEW = 'PAGE_VIEW'
 export const SET_APP_JSON ='SET_APP_JSON'
+
+export function setSize(size){
+  return {type: SET_SIZE, size}
+}
 
 export function setAppJSON(setData){
   return {type: SET_APP_JSON, setData}

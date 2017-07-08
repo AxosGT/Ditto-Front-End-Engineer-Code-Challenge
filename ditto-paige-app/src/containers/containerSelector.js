@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { pageView } from '../actions/index'
 import { setAppJSON } from '../actions/index'
+import { setSize } from '../actions/index'
 import Selector from '../components/Selector'
 
 const mapStateToProps = (state, ownProps) => {
@@ -14,6 +15,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onChangePage: (pageID)=>{
       dispatch(pageView(pageID))
+    },
+    onSetSize: (size)=>{
+      dispatch(setSize(size))
     }
   }
 }

@@ -4,16 +4,46 @@ import Button from './button'
 
 
 class DetailsPage extends Component {
-
     render() {
+      console.log(this.props.activeSize);
       var currentDetails = this.props.activePageLoad[this.props.activePage-1];
       return (
         <div className='detailsPage'>
-          <h1>
-            {this.props.activePage}
+          <div>
             <img src = {'/eyewear-selector' +currentDetails.images.frontal } />
             <img src = {'/eyewear-selector' +currentDetails.images.side } />
+          </div>
+          <h1>
+            {currentDetails.brand}
           </h1>
+          <h1>
+            {currentDetails.name}
+          </h1>
+          <h1>
+            {currentDetails.price}
+          </h1>
+
+        <form>
+          <div>
+
+            {currentDetails.sizes.map((n,i)=>
+              <div
+                key={n}
+                onClick={e=>this.props.onSetSize(n)}
+              >
+                <input
+                  type="radio"
+                  value={n}
+                  checked={this.props.activeSize === n }
+
+                 />
+                {n}
+              </div>
+            )}
+          </div>
+        </form>
+
+          <span dangerouslySetInnerHTML={{__html: currentDetails.description}} />
         </div>
       );
     }

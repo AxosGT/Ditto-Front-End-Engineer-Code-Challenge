@@ -11,12 +11,13 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.props.activePageLoad);
-    console.log(this.props.activePage);
+    // console.log(this.props.activePageLoad);
+    // console.log(this.props.activePage);
     return(
       <div>
         <h1>DITTO</h1>
-        {this.props.activePage?<ContainerDetailsPage />:'' }
+        <hr></hr>
+        {!!this.props.activePage && <ContainerDetailsPage /> }
         <ContainerSelector />
       </div>
 
