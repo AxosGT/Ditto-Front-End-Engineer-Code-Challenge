@@ -27,10 +27,8 @@ export function loadAppJSON() {
   ;
 }
 
-
-
-export function buyPost(data) {
-  return dispatch => fetch(new Request('/buy', {method: 'POST', body: JSON.stringify(data)}))
+export function buyPost(bodyData) {
+  return dispatch => fetch(new Request('/buy', {method: 'POST', body: JSON.stringify(bodyData)}))
   .then(function(response) {
       if(response.status == 200) return response.json();
       else throw new Error('Something went wrong on api server!');

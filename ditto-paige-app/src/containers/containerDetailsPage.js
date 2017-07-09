@@ -3,6 +3,7 @@ import DetailsPage from '../components/DetailsPage'
 import { pageView } from '../actions/index'
 import { setAppJSON } from '../actions/index'
 import { setSize } from '../actions/index'
+import { buyPost } from '../actions/index'
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -19,7 +20,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     },
     onSetSize: (size)=>{
       dispatch(setSize(size))
-    }   
+    },
+    onBuyPost: (objPost)=>{
+      dispatch(buyPost(objPost))
+    }
   }
 }
 

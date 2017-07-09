@@ -6,7 +6,6 @@ import  OrderButton from './orderButton'
 
 class DetailsPage extends Component {
     render() {
-      console.log(this.props.activeSize);
       var currentDetails = this.props.activePageLoad[this.props.activePage-1];
       return (
         <div className='detailsPage'>
@@ -40,7 +39,18 @@ class DetailsPage extends Component {
               </div>
             )}
           </div>
-          <OrderButton />
+          <OrderButton
+            onClick={(e)=>
+              {e.preventDefault();
+              this.props.onBuyPost(
+                {'purchase-sku-id': currentDetails['sku-id'],
+                  'purchase-price': Number(currentDetails.price)*100,
+                  'purchase-sku-size': this.props.activeSize + '',
+                  'purchase-datatime':  new Date().toISOString()
+                }
+              )}
+            }
+          />
         </div>
       );
     }
