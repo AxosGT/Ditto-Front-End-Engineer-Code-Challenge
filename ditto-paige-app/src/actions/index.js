@@ -26,3 +26,19 @@ export function loadAppJSON() {
     )
   ;
 }
+
+
+
+export function buyPost(data) {
+  return dispatch => fetch(new Request('/buy', {method: 'POST', body: JSON.stringify(data)}))
+  .then(function(response) {
+      if(response.status == 200) return response.json();
+      else throw new Error('Something went wrong on api server!');
+  })
+  .then(function(response) {
+      console.debug(response);
+  })
+  .catch(function(error) {
+      console.error(error);
+  });
+}

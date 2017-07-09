@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Button from './button'
+import  OrderButton from './orderButton'
 //import '../myCSS/home.css'
 
 
@@ -22,6 +23,8 @@ class DetailsPage extends Component {
           <h1>
             {currentDetails.price}
           </h1>
+          <span dangerouslySetInnerHTML={{__html: currentDetails.description}} />
+          <h1>Select Size</h1>
           <div>
             {currentDetails.sizes.map((n,i)=>
               <div
@@ -37,7 +40,7 @@ class DetailsPage extends Component {
               </div>
             )}
           </div>
-          <span dangerouslySetInnerHTML={{__html: currentDetails.description}} />
+          <OrderButton />
         </div>
       );
     }
