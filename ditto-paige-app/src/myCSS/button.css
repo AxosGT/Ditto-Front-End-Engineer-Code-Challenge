@@ -12,11 +12,11 @@
   font-size: 16px;
   font-family: "Montserrat" ;
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 420px) {
   .button {
     margin: 3%;
     width: 19%;
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 

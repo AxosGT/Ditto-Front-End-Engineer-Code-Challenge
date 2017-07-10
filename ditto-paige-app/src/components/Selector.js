@@ -4,10 +4,13 @@ import '../myCSS/Selector.css'
 
 class Selector extends Component {
 
-    render() {  
+    render() {
       return (
         <div>
-          <h1 className = 'Selector'><b>Select Your Eyewear</b></h1>
+          {this.props.activePage ?
+            <h1 className = 'DetSelector'><b>Select Your Eyewear</b></h1>:
+            <h1 className = 'Selector'><b>Select Your Eyewear</b></h1>
+          }
           {this.props.activePageLoad.map((n,nInx)=>
               <Button
                 onClick={(e)=>

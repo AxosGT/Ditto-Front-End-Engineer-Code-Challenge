@@ -6,19 +6,19 @@
 }
 @font-face {
     font-family: Montserrat;
-    src: url(/eyewear-selector/assets/web-fonts/Montserrat-Light-webfont.woff);
+    src: url(/eyewear-selector/psd-assets/montserrat/Montserrat-Light.otf);
 }
 .AppFont{
   font-family: "Montserrat" ;
 }
 .App {
   text-align: center;
-  font-size: 16px;
-  margin: 5%;
+  font-size: 18px;
+  margin: 18px;
 
 
 }
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 420px) {
   .App {
 
   }
