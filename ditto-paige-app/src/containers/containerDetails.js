@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import DetailsPage from '../components/DetailsPage'
+import Details from '../components/Details'
 import { pageView } from '../actions/index'
 import { setAppJSON } from '../actions/index'
 import { setSize } from '../actions/index'
@@ -30,4 +30,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(DetailsPage)
+)(Details)

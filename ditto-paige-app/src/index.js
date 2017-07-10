@@ -9,6 +9,7 @@ import ContainerApp from './containers/containerApp';
 import { createStore, applyMiddleware  } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
+import './styles/index.css'
 
 let store = createStore(setMyApp,applyMiddleware(thunk));
 

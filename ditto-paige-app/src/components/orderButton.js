@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import '../myCSS/button.css'
 
 class OrderButton extends Component {
 
     render() {
       return (
-          <button type="button" className='button'
+          <button type="button" className='order-button padding_large'
             onClick = {this.props.onClick} >
-            <h1>BUY NOW</h1>
+            BUY NOW
           </button>
       );
     }

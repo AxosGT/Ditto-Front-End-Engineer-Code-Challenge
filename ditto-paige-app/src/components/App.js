@@ -1,7 +1,6 @@
 import ContainerSelector from '../containers/containerSelector';
-import ContainerDetailsPage from '../containers/containerDetailsPage';
+import ContainerDetails from '../containers/containerDetails';
 import React, { Component } from 'react';
-import '../myCSS/App.css'
 
 class App extends Component {
   constructor(props) {
@@ -11,10 +10,9 @@ class App extends Component {
 
   render() {
     return(
-      <div className = 'AppFont'>
-        <h1 className = 'App'> <b>DITTO</b></h1>
-        <hr></hr>
-        {!!this.props.activePage && <ContainerDetailsPage /> }
+      <div className="app">
+        <h1 className="title app_title">DITTO</h1>
+        {!!this.props.activePage && <ContainerDetails /> }
         <ContainerSelector />
       </div>
 

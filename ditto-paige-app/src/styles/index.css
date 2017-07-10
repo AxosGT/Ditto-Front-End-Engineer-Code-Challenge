@@ -1,0 +1,247 @@
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/eyewear-selector/assets/web-fonts/Montserrat-Bold-webfont.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/eyewear-selector/psd-assets/montserrat/Montserrat-Light.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  font-family: "Montserrat";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Generic CSS */
+
+.button {
+
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.text_light {
+  font-weight: normal;
+  color: gray;
+}
+
+.font_huge {
+  font-size: 3.2em;
+}
+
+.font_large {
+  font-size: 1.5em;
+}
+
+.font_medium {
+  font-size: 1em;
+}
+
+.font_small {
+  font-size: .85em;
+}
+
+.font_tiny {
+  font-size: .5em;
+}
+
+.padding_large {
+  padding: 20px;
+}
+
+.padding_medium {
+  padding: 10px;
+}
+
+.padding_small {
+  padding: 5px;
+}
+
+/* Component CSS */
+
+.app {
+
+}
+
+.app_title {
+  border-bottom: 1px #000 solid;
+  padding: 1em;
+}
+
+.selector > .title {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.selector_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.selector_grid_element {
+  flex: 1;
+}
+
+.selector_option {
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border: 2px solid transparent;
+  padding: 2em;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+.selector_option:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.details_grid {
+  display: block;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.details_description {
+  line-height: 1.4em;
+}
+
+.details_grid_element {
+  flex: 0 1 50%;
+  box-sizing: border-box;
+}
+
+.details_form_label {
+  vertical-align: middle;
+  margin-left: 10px;
+  white-space: nowrap;
+
+}
+
+.details_form {
+
+}
+
+.details_form > div {
+  margin-top: 10px;
+  white-space: nowrap;
+
+}
+
+.details_glasses_image {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.order-button {
+  background: black;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 420px) {
+  .details_grid {
+    display: flex;
+  }
+
+  .details_form {
+    padding: 0 10%;
+  }
+}
+
+/*
+@media only screen and (min-width: 420px) {
+  .button {
+    margin: 3%;
+    width: 19%;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .Selector {
+    font-size: 125px;
+    margin: 20px;
+  }
+  .DetSelector {
+    font-size: 40px;
+
+  }
+}
+*/
