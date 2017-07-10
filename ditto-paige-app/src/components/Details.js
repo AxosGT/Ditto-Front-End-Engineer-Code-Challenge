@@ -5,7 +5,7 @@ class Details extends Component {
     render() {
       var currentDetails = this.props.activePageLoad[this.props.activePage-1];
       return (
-        <div>
+        <div className="details">
           <div className="details_grid">
             <div>
               <img className="details_glasses_image" src={'/eyewear-selector' + currentDetails.images.frontal} />

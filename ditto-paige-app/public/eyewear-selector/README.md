@@ -1,4 +1,4 @@
-Ditto Front End Engineer Code Challenge
+ Ditto Front End Engineer Code Challenge
 ---------------------------------------
 
 The following is our front end engineering code challenge. It should take about

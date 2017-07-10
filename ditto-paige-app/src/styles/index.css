@@ -75,10 +75,6 @@ img {
 
 /* Generic CSS */
 
-.button {
-
-}
-
 .title {
   text-align: center;
   font-weight: bold;
@@ -166,6 +162,10 @@ img {
   border: 2px solid black;
 }
 
+.details {
+  animation: fadeIn 1s;
+}
+
 .details_grid {
   display: block;
   flex-wrap: nowrap;
@@ -185,10 +185,6 @@ img {
   vertical-align: middle;
   margin-left: 10px;
   white-space: nowrap;
-
-}
-
-.details_form {
 
 }
 
@@ -213,6 +209,13 @@ img {
   width: 100%;
 }
 
+/* Animation */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 420px) {
@@ -224,24 +227,3 @@ img {
     padding: 0 10%;
   }
 }
-
-/*
-@media only screen and (min-width: 420px) {
-  .button {
-    margin: 3%;
-    width: 19%;
-    font-size: 30px;
-  }
-}
-
-@media only screen and (min-width: 420px) {
-  .Selector {
-    font-size: 125px;
-    margin: 20px;
-  }
-  .DetSelector {
-    font-size: 40px;
-
-  }
-}
-*/
