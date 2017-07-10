@@ -2,18 +2,30 @@
   background-color: white;
   border: none;
   color: black;
-  padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+  margin-bottom: 20%;
+  white-space: nowrap;
   font-size: 16px;
-  border-radius: 12px;
-  font-family: "Comic Sans MS", Arial, 'Trebuchet MS';
+  font-family: "Montserrat" ;
+}
+@media only screen and (min-width: 400px) {
+  .button {
+    margin: 3%;
+    width: 19%;
+    font-size: 34px;
+  }
 }
 
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
 .button:hover {
     color: black;
     border: 2px solid black;

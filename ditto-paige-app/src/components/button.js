@@ -8,8 +8,11 @@ class Button extends Component {
           <button type="button" className='button'
             onClick = {this.props.onClick} >
             <img src = {this.props.buttonImg} />
-            <h1>{this.props.buttonBrand}</h1>
-            <h1>{this.props.buttonName}</h1>
+            <p>
+              <span><b>{this.props.buttonBrand}</b></span>
+              <br></br>
+              <span>{this.props.buttonName}</span>
+            </p>
           </button>
       );
     }

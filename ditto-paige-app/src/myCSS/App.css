@@ -1,24 +1,25 @@
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/eyewear-selector/assets/web-fonts/Montserrat-Bold-webfont.woff);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/eyewear-selector/assets/web-fonts/Montserrat-Light-webfont.woff);
+}
+.AppFont{
+  font-family: "Montserrat" ;
+}
 .App {
   text-align: center;
-}
+  font-size: 16px;
+  margin: 5%;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
 }
+@media only screen and (min-width: 400px) {
+  .App {
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  }
 }
